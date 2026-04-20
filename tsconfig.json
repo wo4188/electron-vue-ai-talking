@@ -16,7 +16,7 @@
 			"@common/*": ["./src/common/*"],
 			"@main/*": ["./src/main/*"],
 			"@renderer/*": ["./src/renderer/*"],
-			"@locales/*": ["./src/locales/*"]
+			"@locales/*": ["./locales/*"]
 		}
 	}
 }

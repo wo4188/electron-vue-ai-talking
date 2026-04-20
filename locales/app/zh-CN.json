@@ -1,0 +1,23 @@
+{
+  "title": "土豆",
+  "zhCN": "中文",
+  "enUS": "英文",
+  "dialog-cancel": "取消",
+  "dialog-confirm": "确认",
+  "timeAgo-justNow": "刚刚",
+  "timeAgo-minutes": "{count}分钟前",
+  "timeAgo-hours": "{count}小时前",
+  "timeAgo-days": "{count}天前",
+  "timeAgo-months": "{count}个月前",
+  "timeAgo-years": "{count}年前",
+  "timeAgo-weekday-sun": "星期日",
+  "timeAgo-weekday-mon": "星期一",
+  "timeAgo-weekday-tue": "星期二",
+  "timeAgo-weekday-wed": "星期三",
+  "timeAgo-weekday-thu": "星期四",
+  "timeAgo-weekday-fri": "星期五",
+  "timeAgo-weekday-sat": "星期六",
+  "tray-tooltip": "土豆",
+  "tray-showWindow": "显示窗口",
+  "tray-exit": "退出"
+}

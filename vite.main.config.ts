@@ -9,7 +9,7 @@ export default defineConfig({
       '@common': resolve(__dirname, 'src/common'),
       '@main': resolve(__dirname, 'src/main'),
       '@renderer': resolve(__dirname, 'src/renderer'),
-      '@locales': resolve(__dirname, 'src/locales'),
+      '@locales': resolve(__dirname, 'locales'),
     },
   },
 });

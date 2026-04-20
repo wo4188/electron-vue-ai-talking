@@ -11,3 +11,8 @@ declare module '*.json' {
   const value: any;
   export default value;
 }
+
+declare module '@locales/i18n' {
+  const i18n: any;
+  export default i18n;
+}

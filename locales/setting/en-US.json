@@ -1,0 +1,23 @@
+{
+  "title": "Settings",
+  "base": "Basic Settings",
+  "provider-modelConfig": "Model Configuration",
+  "theme-label": "Theme Settings",
+  "theme-dark": "Dark Theme",
+  "theme-light": "Light Theme",
+  "theme-system": "System Theme",
+  "theme-primaryColor": "Primary Color",
+  "appearance-fontSize": "Font Size",
+  "appearance-fontSizeOptions-10": "Tiny (10px)",
+  "appearance-fontSizeOptions-12": "Small (12px)",
+  "appearance-fontSizeOptions-14": "Normal (14px)",
+  "appearance-fontSizeOptions-16": "Medium (16px)",
+  "appearance-fontSizeOptions-18": "Large (18px)",
+  "appearance-fontSizeOptions-20": "Larger (20px)",
+  "appearance-fontSizeOptions-24": "Extra Large (24px)",
+  "behavior-minimizeToTray": "Minimize to tray when closed",
+  "language-label": "Language",
+  "providers-defaultModel": "Default Model",
+  "providers-apiKey": "API Key",
+  "providers-apiUrl": "API URL"
+}

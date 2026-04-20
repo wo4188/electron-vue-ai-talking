@@ -17,6 +17,14 @@ export default defineConfig(async () => {
           'vue-router',
           'pinia',
           'vue-i18n',
+          {
+            'naive-ui': [
+              ['useDialog', '$useDialog'], //
+              ['useMessage', '$useMessage'],
+              ['useNotification', '$useNotification'],
+              ['useLoadingBar', '$useLoadingBar'],
+            ],
+          },
         ],
         dts: 'src/renderer/auto-imports.d.ts',
       }),
@@ -37,7 +45,7 @@ export default defineConfig(async () => {
         '@common': resolve(__dirname, 'src/common'),
         '@main': resolve(__dirname, 'src/main'),
         '@renderer': resolve(__dirname, 'src/renderer'),
-        '@locales': resolve(__dirname, 'src/locales'),
+        '@locales': resolve(__dirname, 'locales'),
       },
     },
   };
