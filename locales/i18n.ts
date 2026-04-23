@@ -1,5 +1,4 @@
 import { createI18n } from 'vue-i18n';
-import * as _ from 'lodash-es';
 
 // 导入 所有语言文件(/locales/**/*.json)
 const modules = import.meta.glob<{ default: Record<string, any> }>('@locales/**/*.json', { eager: true });
@@ -11,6 +10,17 @@ const availableLocales = [
 
 // 构建 语言字典
 const langDicts: Record<string, any> = {};
+
+function resolveNestedDir(target: Record<string, any>, dirs: string[]) {
+  let curr = target;
+  for (const dir of dirs) {
+    if (!curr[dir]) {
+      curr[dir] = {};
+    }
+    curr = curr[dir];
+  }
+  return curr;
+}
 
 for (const [filePath, module] of Object.entries(modules)) {
   // filePath 如 '/locales/app/zh-CN.json'
@@ -30,12 +40,8 @@ for (const [filePath, module] of Object.entries(modules)) {
     langDicts[lang] = {};
   }
 
-  let currDictDir = langDicts[lang];
-  if (dirs.length > 0) {
-    _.set(currDictDir, dirs.join('.'), module.default);
-  } else {
-    Object.assign(currDictDir, module.default);
-  }
+  const targetDir = resolveNestedDir(langDicts[lang], dirs);
+  Object.assign(targetDir, module.default);
 }
 
 // console.log('langDicts', langDicts);

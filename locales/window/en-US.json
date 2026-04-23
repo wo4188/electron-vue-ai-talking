@@ -1,6 +1,6 @@
 {
-  "minimize": "Minimize",
+  "close": "Close",
   "maximize": "Maximize",
-  "restore": "Restore",
-  "close": "Close"
+  "minimize": "Minimize",
+  "restore": "Restore"
 }
