@@ -15,7 +15,7 @@ import {
   dateEnUS,
 } from 'naive-ui';
 
-const { locale } = useI18n();
+const { locale, t } = useI18n();
 
 const zhCNLang = {
   locale: zhCN,
@@ -44,6 +44,12 @@ function setNaiveLocale(val: string) {
 
 onMounted(() => {
   console.log('👋 App根组件已挂载');
+});
+
+watchEffect(() => {
+  console.log('🌏 当前语言 locale', locale.value);
+
+  document.title = t('app.title');
 });
 </script>
 

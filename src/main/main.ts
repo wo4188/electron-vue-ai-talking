@@ -12,6 +12,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 1024,
     height: 800,
+    title: 'Loading...', // 初始的窗口标题文本，避免 Electron 默认显示 package.json 的 productName
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },

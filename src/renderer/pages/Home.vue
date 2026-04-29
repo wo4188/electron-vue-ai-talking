@@ -39,10 +39,6 @@ function doSetLang(val: string) {
   localStorage.setItem('locale', val);
 }
 
-watchEffect(() => {
-  console.log('🌏 当前语言 locale', locale.value);
-});
-
 const btnCls = computed(() =>
   clsx(
     'bg-blue-500', //
